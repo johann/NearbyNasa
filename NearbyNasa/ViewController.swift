@@ -9,10 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let store = AsteroidDatastore.sharedDataStore
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        store.getNearbyAsteroids {
+            for asteroid in self.store.nearByAsteroids{
+                print(String(asteroid.missDistanceInKilometers))
+            }
+            
+        }
+        
+//        for asteroid in store.nearByAsteroids{
+//            print("\(asteroid.name)-\(asteroid.diameter)-\(asteroid.missDistance)-\(asteroid.isHazardous)-\(asteroid.neoRef)")
+//        }
+        
     }
 
     override func didReceiveMemoryWarning() {

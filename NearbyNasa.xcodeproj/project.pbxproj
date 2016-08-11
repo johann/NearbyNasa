@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B6578C67AA62E50753C44F0 /* Pods_NearbyNasa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB555C98907406680587F07F /* Pods_NearbyNasa.framework */; };
 		8F8C1C6E1D5AD6EA009694AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8C1C6D1D5AD6EA009694AF /* AppDelegate.swift */; };
 		8F8C1C701D5AD6EA009694AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8C1C6F1D5AD6EA009694AF /* ViewController.swift */; };
 		8F8C1C731D5AD6EA009694AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F8C1C711D5AD6EA009694AF /* Main.storyboard */; };
 		8F8C1C751D5AD6EA009694AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F8C1C741D5AD6EA009694AF /* Assets.xcassets */; };
 		8F8C1C781D5AD6EA009694AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F8C1C761D5AD6EA009694AF /* LaunchScreen.storyboard */; };
+		8F8C1C811D5AD79B009694AF /* NasaApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8C1C801D5AD79B009694AF /* NasaApiClient.swift */; };
+		8F8C1C831D5B82C5009694AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8C1C821D5B82C5009694AF /* Constants.swift */; };
+		8F8C1C851D5BC099009694AF /* Asteroid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8C1C841D5BC099009694AF /* Asteroid.swift */; };
+		8F8C1C871D5BC79A009694AF /* AsteroidDatastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8C1C861D5BC79A009694AF /* AsteroidDatastore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E6AAAFCB6A4532141B4819B /* Pods-NearbyNasa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyNasa.release.xcconfig"; path = "Pods/Target Support Files/Pods-NearbyNasa/Pods-NearbyNasa.release.xcconfig"; sourceTree = "<group>"; };
+		671F0A84918DBE2B7C802E8C /* Pods-NearbyNasa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyNasa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NearbyNasa/Pods-NearbyNasa.debug.xcconfig"; sourceTree = "<group>"; };
 		8F8C1C6A1D5AD6EA009694AF /* NearbyNasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearbyNasa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F8C1C6D1D5AD6EA009694AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F8C1C6F1D5AD6EA009694AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,11 @@
 		8F8C1C741D5AD6EA009694AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F8C1C771D5AD6EA009694AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F8C1C791D5AD6EA009694AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F8C1C801D5AD79B009694AF /* NasaApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NasaApiClient.swift; sourceTree = "<group>"; };
+		8F8C1C821D5B82C5009694AF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8F8C1C841D5BC099009694AF /* Asteroid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asteroid.swift; sourceTree = "<group>"; };
+		8F8C1C861D5BC79A009694AF /* AsteroidDatastore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsteroidDatastore.swift; sourceTree = "<group>"; };
+		FB555C98907406680587F07F /* Pods_NearbyNasa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearbyNasa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B6578C67AA62E50753C44F0 /* Pods_NearbyNasa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79EAF577E98DC01D0BDDBD35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				671F0A84918DBE2B7C802E8C /* Pods-NearbyNasa.debug.xcconfig */,
+				0E6AAAFCB6A4532141B4819B /* Pods-NearbyNasa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8F8C1C611D5AD6EA009694AF = {
 			isa = PBXGroup;
 			children = (
 				8F8C1C6C1D5AD6EA009694AF /* NearbyNasa */,
 				8F8C1C6B1D5AD6EA009694AF /* Products */,
+				79EAF577E98DC01D0BDDBD35 /* Pods */,
+				D4A157731F4ABD1524F94D61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +80,24 @@
 			children = (
 				8F8C1C6D1D5AD6EA009694AF /* AppDelegate.swift */,
 				8F8C1C6F1D5AD6EA009694AF /* ViewController.swift */,
+				8F8C1C801D5AD79B009694AF /* NasaApiClient.swift */,
+				8F8C1C861D5BC79A009694AF /* AsteroidDatastore.swift */,
+				8F8C1C841D5BC099009694AF /* Asteroid.swift */,
+				8F8C1C821D5B82C5009694AF /* Constants.swift */,
 				8F8C1C711D5AD6EA009694AF /* Main.storyboard */,
 				8F8C1C741D5AD6EA009694AF /* Assets.xcassets */,
 				8F8C1C761D5AD6EA009694AF /* LaunchScreen.storyboard */,
 				8F8C1C791D5AD6EA009694AF /* Info.plist */,
 			);
 			path = NearbyNasa;
+			sourceTree = "<group>";
+		};
+		D4A157731F4ABD1524F94D61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB555C98907406680587F07F /* Pods_NearbyNasa.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F8C1C7C1D5AD6EA009694AF /* Build configuration list for PBXNativeTarget "NearbyNasa" */;
 			buildPhases = (
+				A3694FBC9B97F2C198B5F68D /* [CP] Check Pods Manifest.lock */,
 				8F8C1C661D5AD6EA009694AF /* Sources */,
 				8F8C1C671D5AD6EA009694AF /* Frameworks */,
 				8F8C1C681D5AD6EA009694AF /* Resources */,
+				D6B2CA8B04CB98E7E8BC4448 /* [CP] Embed Pods Frameworks */,
+				B22D4F1FD31316779BD6515A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +169,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A3694FBC9B97F2C198B5F68D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B22D4F1FD31316779BD6515A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NearbyNasa/Pods-NearbyNasa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6B2CA8B04CB98E7E8BC4448 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NearbyNasa/Pods-NearbyNasa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8F8C1C661D5AD6EA009694AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8F8C1C701D5AD6EA009694AF /* ViewController.swift in Sources */,
+				8F8C1C811D5AD79B009694AF /* NasaApiClient.swift in Sources */,
 				8F8C1C6E1D5AD6EA009694AF /* AppDelegate.swift in Sources */,
+				8F8C1C831D5B82C5009694AF /* Constants.swift in Sources */,
+				8F8C1C871D5BC79A009694AF /* AsteroidDatastore.swift in Sources */,
+				8F8C1C851D5BC099009694AF /* Asteroid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +338,7 @@
 		};
 		8F8C1C7D1D5AD6EA009694AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 671F0A84918DBE2B7C802E8C /* Pods-NearbyNasa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NearbyNasa/Info.plist;
@@ -258,6 +350,7 @@
 		};
 		8F8C1C7E1D5AD6EA009694AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E6AAAFCB6A4532141B4819B /* Pods-NearbyNasa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NearbyNasa/Info.plist;
@@ -286,6 +379,7 @@
 				8F8C1C7E1D5AD6EA009694AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
