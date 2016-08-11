@@ -18,20 +18,9 @@ class ViewController: UIViewController {
             for asteroid in self.store.nearByAsteroids{
                 print(String(asteroid.missDistanceInKilometers))
             }
-            
         }
-        
-//        for asteroid in store.nearByAsteroids{
-//            print("\(asteroid.name)-\(asteroid.diameter)-\(asteroid.missDistance)-\(asteroid.isHazardous)-\(asteroid.neoRef)")
-//        }
-        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
+    
 }
 
